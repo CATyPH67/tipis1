@@ -7,7 +7,7 @@ from scipy.fft import fft
 
 def create_harmonic(length, points_count, frequency):
     x = np.arange(0, length, length/points_count)
-    y = np.cos(2 * math.pi * 2 * frequency * x)
+    y = np.cos(math.pi * 2 * frequency * x)
 
     return x, y
 
